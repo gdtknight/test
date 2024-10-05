@@ -6,7 +6,7 @@
 /*   By: yoshin <yoshin@student.42gyeongsan.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:31:17 by yoshin            #+#    #+#             */
-/*   Updated: 2024/10/01 10:42:46 by yoshin           ###   ########.fr       */
+/*   Updated: 2024/10/06 01:51:09 by yoshin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 int	ft_isalpha(int c)
 {
 	if ('a' <= c && c <= 'z')
+		return (1);
+	if ('A' <= c && c <= 'Z')
 		return (1);
 	return (0);
 }
