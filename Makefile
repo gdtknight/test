@@ -6,7 +6,7 @@
 #    By: yoshin <yoshin@student.42gyeongsan.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/25 18:16:41 by yoshin            #+#    #+#              #
-#    Updated: 2024/10/01 10:31:08 by yoshin           ###   ########.fr        #
+#    Updated: 2024/10/04 13:06:13 by yoshin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,11 +23,11 @@ OBJS		=	$(patsubst %.c, %.o, $(SRCS))
 .PHONY: $(NAME) all clean fclean re
 all: $(NAME)
 
-$(TARGET): $(OBJS)
+$(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $@ $^
 
 %.o: %.c
-	$(CC) $(CFLAGS) -o $@ -c $< libft.h
+	$(CC) $(CFLAGS) -c $< libft.h
 
 clean:
 	rm -f $(OBJS)
