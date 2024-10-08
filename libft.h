@@ -6,12 +6,14 @@
 /*   By: yoshin <yoshin@student.42gyeongsan.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:25:16 by yoshin            #+#    #+#             */
-/*   Updated: 2024/10/08 09:15:46 by yoshin           ###   ########.fr       */
+/*   Updated: 2024/10/08 20:18:21 by yoshin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define MAX_LEN 12
 
 # include <string.h>
 
@@ -78,4 +80,6 @@ typedef struct s_list
 }	t_list;
 /* ---------- */
 
+/* ----- others ----- */
+void	ft_carry(char *buf, int *idx);
 #endif
